@@ -1,3 +1,49 @@
-.message {
 
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.message {
+    background-color: #002107;
+    position: relative;
+    width: 150px;
+    padding: 5px 5px 5px 5px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.message::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(42px at top left, transparent 50%, #002107 0) no-repeat right bottom;
+}
+
+.timeBlock {
+    display: inline-block;
+    position: absolute;
+    padding: 0 5px 3px 0;
+    right: 0;
+    bottom: 0;
+    color: darkolivegreen;
+}
+
+.messageBlock {
+    display: inline-block;
+    padding: 0 0 0 3px;
+}
+
+.name {
+    color: mediumpurple;
+}
+
+.messageText {
+    color: darkseagreen;
 }
