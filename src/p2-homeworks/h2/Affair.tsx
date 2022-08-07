@@ -13,13 +13,26 @@ function Affair(props: AffairPropsType) {
         props.deleteAffairCallback(props.affair._id)
     }
 
+    let priority
+    switch (props.affair.priority) {
+        case "low":
+            priority = s.low;
+            break;
+        case "middle":
+            priority = s.middle;
+            break;
+        case "high":
+            priority = s.high;
+            break;
+    }
+
     return (
         <div className={s.affairBlock}>
             <div>{props.affair.name}</div>
-            <div className={s.priority}>
+            <div className={priority}>
                 [{props.affair.priority}]
             </div>
-            <div>
+            <div className={s.button}>
                 <button onClick={deleteCallback}>X</button>
             </div>
         </div>

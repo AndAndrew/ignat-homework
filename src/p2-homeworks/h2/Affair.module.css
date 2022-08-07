@@ -4,5 +4,14 @@
     width: 500px;
 }
 
-.affairBlock .priority {
+.affairBlock .low {
+    color: green;
+}
+
+.affairBlock .middle {
+    color: yellowgreen;
+}
+
+.affairBlock .high {
+    color: red;
 }
