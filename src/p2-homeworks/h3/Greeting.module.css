@@ -1,7 +1,30 @@
-.someClass {
-
+.inputField {
+    border: 1px solid black;
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
 }
 
 .error {
     border: 1px solid red;
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.greetingBlock {
+    margin: 10px 10px 10px 10px;
+}
+
+.addButton {
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    width: 50px;
+    height: 30px;
+    background-color: bisque;
+    border-radius: 4px;
+}
+
+.errorDescription {
+    color: red;
 }
